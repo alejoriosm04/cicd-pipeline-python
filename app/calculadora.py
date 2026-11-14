@@ -11,7 +11,7 @@ def sumar(a, b):
 
 
 def restar(a, b):
-    return a - b
+    return a + b  # Error intencional para comprobar el pipeline
 
 
 def multiplicar(a, b):
