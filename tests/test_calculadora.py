@@ -22,3 +22,11 @@ def test_dividir():
     assert dividir(5, -1) == -5.0
     with pytest.raises(ZeroDivisionError):
         dividir(1, 0)
+
+
+def test_restar_decimales():
+    assert restar(0.3, 0.1) == pytest.approx(0.2)
+
+
+def test_restar_dos_negativos():
+    assert restar(-5, -2) == -3
